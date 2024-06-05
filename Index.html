@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Librería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .nav-container {
+      background-color: #136696;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 20px 40px;
+      justify-content: space-between;
+    }
+
+    .nav-title {
+      margin: 0;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    .nav-menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .nav-item {
+      padding: 0 15px;
+    }
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #ddd;
+    }
+
+    .logout-btn {
+      background-color: transparent;
+      color: white;
+      border-radius: 10px;
+      border: 1px solid white;
+      padding: 8px 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .logout-btn:hover {
+      background-color: white;
+      color: #136696;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav-container">
+    <h1 class="nav-title">Pingüinera</h1>
+    <ul class="nav-menu">
+      <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Catálogo</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Novedades</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+    </ul>
+    <button class="logout-btn">Logout</button>
+  </nav>
+</body>
+
+</html>
